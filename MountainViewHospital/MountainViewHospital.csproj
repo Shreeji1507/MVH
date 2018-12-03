@@ -74,29 +74,10 @@
     <Compile Include="MountainViewHospital.Designer.cs">
       <DependentUpon>MountainViewHospital.cs</DependentUpon>
     </Compile>
-    <Compile Include="MVCHDataSet.Designer.cs">
+    <Compile Include="MVHRoomUtilizationDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MVCHDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="MVHPatientBillDataset.cs">
-      <DependentUpon>MVHPatientBillDataset.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="MVHPatientBillDataset.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MVHPatientBillDataset.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="MVHRoomUtilizationDataset.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MVHRoomUtilizationDataset.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PatientBillReport.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PatientBillReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
+      <DependentUpon>MVHRoomUtilizationDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -106,17 +87,8 @@
       <DependentUpon>RoomUtilizationReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Test.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Test.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="MountainViewHospital.resx">
       <DependentUpon>MountainViewHospital.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PatientBillReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>PatientBillReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -132,38 +104,16 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RoomUtilizationReport.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="MVCHDataSet.xsc">
-      <DependentUpon>MVCHDataSet.xsd</DependentUpon>
+    <None Include="MVHRoomUtilizationDataSet.xsc">
+      <DependentUpon>MVHRoomUtilizationDataSet.xsd</DependentUpon>
     </None>
-    <None Include="MVCHDataSet.xsd">
+    <None Include="MVHRoomUtilizationDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MVCHDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>MVHRoomUtilizationDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MVCHDataSet.xss">
-      <DependentUpon>MVCHDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="MVHPatientBillDataset.xsc">
-      <DependentUpon>MVHPatientBillDataset.xsd</DependentUpon>
-    </None>
-    <None Include="MVHPatientBillDataset.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MVHPatientBillDataset.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="MVHPatientBillDataset.xss">
-      <DependentUpon>MVHPatientBillDataset.xsd</DependentUpon>
-    </None>
-    <None Include="MVHRoomUtilizationDataset.xsc">
-      <DependentUpon>MVHRoomUtilizationDataset.xsd</DependentUpon>
-    </None>
-    <None Include="MVHRoomUtilizationDataset.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MVHRoomUtilizationDataset.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="MVHRoomUtilizationDataset.xss">
-      <DependentUpon>MVHRoomUtilizationDataset.xsd</DependentUpon>
+    <None Include="MVHRoomUtilizationDataSet.xss">
+      <DependentUpon>MVHRoomUtilizationDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -174,17 +124,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Test.xsc">
-      <DependentUpon>Test.xsd</DependentUpon>
-    </None>
-    <None Include="Test.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Test.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Test.xss">
-      <DependentUpon>Test.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

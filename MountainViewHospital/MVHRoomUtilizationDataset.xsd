@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="MVHRoomUtilizationDataset" targetNamespace="http://tempuri.org/MVHRoomUtilizationDataset.xsd" xmlns:mstns="http://tempuri.org/MVHRoomUtilizationDataset.xsd" xmlns="http://tempuri.org/MVHRoomUtilizationDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="MVHRoomUtilizationDataSet" targetNamespace="http://tempuri.org/MVHRoomUtilizationDataSet.xsd" xmlns:mstns="http://tempuri.org/MVHRoomUtilizationDataSet.xsd" xmlns="http://tempuri.org/MVHRoomUtilizationDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -36,7 +36,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="MVHRoomUtilizationDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MVHRoomUtilizationDataset" msprop:Generator_UserDSName="MVHRoomUtilizationDataset">
+  <xs:element name="MVHRoomUtilizationDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MVHRoomUtilizationDataSet" msprop:Generator_UserDSName="MVHRoomUtilizationDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="spRoomUtilizationReport" msprop:Generator_TableClassName="spRoomUtilizationReportDataTable" msprop:Generator_TableVarName="tablespRoomUtilizationReport" msprop:Generator_TablePropName="spRoomUtilizationReport" msprop:Generator_RowDeletingName="spRoomUtilizationReportRowDeleting" msprop:Generator_RowChangingName="spRoomUtilizationReportRowChanging" msprop:Generator_RowEvHandlerName="spRoomUtilizationReportRowChangeEventHandler" msprop:Generator_RowDeletedName="spRoomUtilizationReportRowDeleted" msprop:Generator_UserTableName="spRoomUtilizationReport" msprop:Generator_RowChangedName="spRoomUtilizationReportRowChanged" msprop:Generator_RowEvArgName="spRoomUtilizationReportRowChangeEvent" msprop:Generator_RowClassName="spRoomUtilizationReportRow">

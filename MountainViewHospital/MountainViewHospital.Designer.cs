@@ -38,13 +38,11 @@
             this.tabItems = new System.Windows.Forms.TabPage();
             this.tabCostCenter = new System.Windows.Forms.TabPage();
             this.tabReports = new System.Windows.Forms.TabPage();
-            this.RoomUtilizationReportViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.tabPatientBillReport = new System.Windows.Forms.TabPage();
-            this.PatientBillReportViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.RoomUtilizationReportViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             this.tabReports.SuspendLayout();
-            this.tabPatientBillReport.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -148,25 +146,12 @@
             this.tabReports.Name = "tabReports";
             this.tabReports.Size = new System.Drawing.Size(782, 427);
             this.tabReports.TabIndex = 5;
-            this.tabReports.Text = "Reports";
+            this.tabReports.Text = "Room Utilization Report";
             this.tabReports.UseVisualStyleBackColor = true;
-            // 
-            // RoomUtilizationReportViewer
-            // 
-            this.RoomUtilizationReportViewer.ActiveViewIndex = -1;
-            this.RoomUtilizationReportViewer.AutoScroll = true;
-            this.RoomUtilizationReportViewer.AutoSize = true;
-            this.RoomUtilizationReportViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RoomUtilizationReportViewer.Cursor = System.Windows.Forms.Cursors.Default;
-            this.RoomUtilizationReportViewer.Location = new System.Drawing.Point(0, 0);
-            this.RoomUtilizationReportViewer.Name = "RoomUtilizationReportViewer";
-            this.RoomUtilizationReportViewer.Size = new System.Drawing.Size(1250, 750);
-            this.RoomUtilizationReportViewer.TabIndex = 0;
-            this.RoomUtilizationReportViewer.Load += new System.EventHandler(this.RoomUtilizationReportViewer_Load_1);
+            this.tabReports.Click += new System.EventHandler(this.tabReports_Click);
             // 
             // tabPatientBillReport
             // 
-            this.tabPatientBillReport.Controls.Add(this.PatientBillReportViewer);
             this.tabPatientBillReport.Location = new System.Drawing.Point(4, 22);
             this.tabPatientBillReport.Name = "tabPatientBillReport";
             this.tabPatientBillReport.Padding = new System.Windows.Forms.Padding(3);
@@ -175,17 +160,17 @@
             this.tabPatientBillReport.Text = "Patient Bill Report";
             this.tabPatientBillReport.UseVisualStyleBackColor = true;
             // 
-            // PatientBillReportViewer
+            // RoomUtilizationReportViewer
             // 
-            this.PatientBillReportViewer.ActiveViewIndex = -1;
-            this.PatientBillReportViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PatientBillReportViewer.Cursor = System.Windows.Forms.Cursors.Default;
-            this.PatientBillReportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PatientBillReportViewer.Location = new System.Drawing.Point(3, 3);
-            this.PatientBillReportViewer.Name = "PatientBillReportViewer";
-            this.PatientBillReportViewer.Size = new System.Drawing.Size(776, 421);
-            this.PatientBillReportViewer.TabIndex = 0;
-            this.PatientBillReportViewer.Load += new System.EventHandler(this.PatientBillReportViewer_Load);
+            this.RoomUtilizationReportViewer.ActiveViewIndex = -1;
+            this.RoomUtilizationReportViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RoomUtilizationReportViewer.Cursor = System.Windows.Forms.Cursors.Default;
+            this.RoomUtilizationReportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RoomUtilizationReportViewer.Location = new System.Drawing.Point(0, 0);
+            this.RoomUtilizationReportViewer.Name = "RoomUtilizationReportViewer";
+            this.RoomUtilizationReportViewer.Size = new System.Drawing.Size(782, 427);
+            this.RoomUtilizationReportViewer.TabIndex = 0;
+            this.RoomUtilizationReportViewer.Load += new System.EventHandler(this.RoomUtilizationReportViewer_Load);
             // 
             // MountainViewHospital
             // 
@@ -201,8 +186,6 @@
             this.tabHome.ResumeLayout(false);
             this.tabHome.PerformLayout();
             this.tabReports.ResumeLayout(false);
-            this.tabReports.PerformLayout();
-            this.tabPatientBillReport.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -218,9 +201,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TabPage tabReports;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer RoomUtilizationReportViewer;
         private System.Windows.Forms.TabPage tabPatientBillReport;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer PatientBillReportViewer;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer RoomUtilizationReportViewer;
     }
 }
 

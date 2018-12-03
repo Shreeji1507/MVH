@@ -20,9 +20,9 @@ namespace MountainViewHospital {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("MVHRoomUtilizationDataset")]
+    [global::System.Xml.Serialization.XmlRootAttribute("MVHRoomUtilizationDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class MVHRoomUtilizationDataset : global::System.Data.DataSet {
+    public partial class MVHRoomUtilizationDataSet : global::System.Data.DataSet {
         
         private spRoomUtilizationReportDataTable tablespRoomUtilizationReport;
         
@@ -30,7 +30,7 @@ namespace MountainViewHospital {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public MVHRoomUtilizationDataset() {
+        public MVHRoomUtilizationDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace MountainViewHospital {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected MVHRoomUtilizationDataset(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected MVHRoomUtilizationDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace MountainViewHospital {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            MVHRoomUtilizationDataset cln = ((MVHRoomUtilizationDataset)(base.Clone()));
+            MVHRoomUtilizationDataSet cln = ((MVHRoomUtilizationDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace MountainViewHospital {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "MVHRoomUtilizationDataset";
+            this.DataSetName = "MVHRoomUtilizationDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/MVHRoomUtilizationDataset.xsd";
+            this.Namespace = "http://tempuri.org/MVHRoomUtilizationDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablespRoomUtilizationReport = new spRoomUtilizationReportDataTable();
@@ -225,7 +225,7 @@ namespace MountainViewHospital {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            MVHRoomUtilizationDataset ds = new MVHRoomUtilizationDataset();
+            MVHRoomUtilizationDataSet ds = new MVHRoomUtilizationDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -565,7 +565,7 @@ namespace MountainViewHospital {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                MVHRoomUtilizationDataset ds = new MVHRoomUtilizationDataset();
+                MVHRoomUtilizationDataSet ds = new MVHRoomUtilizationDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -751,7 +751,7 @@ namespace MountainViewHospital {
         }
     }
 }
-namespace MountainViewHospital.MVHRoomUtilizationDatasetTableAdapters {
+namespace MountainViewHospital.MVHRoomUtilizationDataSetTableAdapters {
     
     
     /// <summary>
@@ -907,7 +907,7 @@ namespace MountainViewHospital.MVHRoomUtilizationDatasetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(MVHRoomUtilizationDataset.spRoomUtilizationReportDataTable dataTable) {
+        public virtual int Fill(MVHRoomUtilizationDataSet.spRoomUtilizationReportDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -920,9 +920,9 @@ namespace MountainViewHospital.MVHRoomUtilizationDatasetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual MVHRoomUtilizationDataset.spRoomUtilizationReportDataTable GetData() {
+        public virtual MVHRoomUtilizationDataSet.spRoomUtilizationReportDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            MVHRoomUtilizationDataset.spRoomUtilizationReportDataTable dataTable = new MVHRoomUtilizationDataset.spRoomUtilizationReportDataTable();
+            MVHRoomUtilizationDataSet.spRoomUtilizationReportDataTable dataTable = new MVHRoomUtilizationDataSet.spRoomUtilizationReportDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -996,7 +996,7 @@ namespace MountainViewHospital.MVHRoomUtilizationDatasetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateUpdatedRows(MVHRoomUtilizationDataset dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(MVHRoomUtilizationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1006,7 +1006,7 @@ namespace MountainViewHospital.MVHRoomUtilizationDatasetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateInsertedRows(MVHRoomUtilizationDataset dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(MVHRoomUtilizationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1016,7 +1016,7 @@ namespace MountainViewHospital.MVHRoomUtilizationDatasetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateDeletedRows(MVHRoomUtilizationDataset dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(MVHRoomUtilizationDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1050,7 +1050,7 @@ namespace MountainViewHospital.MVHRoomUtilizationDatasetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public virtual int UpdateAll(MVHRoomUtilizationDataset dataSet) {
+        public virtual int UpdateAll(MVHRoomUtilizationDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
